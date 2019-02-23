@@ -1,5 +1,5 @@
 # TypeScript with AWS Serverless Application Model
-This is a sample project based on AWS SAM's hello-world template project, which demonstrates how you can use TypeScript with Lambda (which is not currently supported by SAM/Lambda itself).
+This is a sample project based on AWS SAM's hello-world template project, which demonstrates how you can use TypeScript with SAM/Lambda (which is not currently supported by SAM/Lambda itself).
 
 # Prerequisites
 1. [AWS SAM CLI](https://aws.amazon.com/serverless/sam/)
