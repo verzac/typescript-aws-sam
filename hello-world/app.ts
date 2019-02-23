@@ -1,6 +1,6 @@
-import './services/sampleservice.service';
+import './services/example.service';
 import axios from 'axios';
-import echoThisString, { consoleLogSomething } from './services/sampleservice.service';
+import echoThisString, { consoleLogSomething } from './services/example.service';
 const url = 'http://checkip.amazonaws.com/';
 let response;
 
