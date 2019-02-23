@@ -1,0 +1,32 @@
+{
+  "name": "hello_world",
+  "version": "1.0.0",
+  "description": "hello world sample for NodeJS",
+  "main": "src/index.js",
+  "repository": "https://github.com/awslabs/aws-sam-cli/tree/develop/samcli/local/init/templates/cookiecutter-aws-sam-hello-nodejs",
+  "author": "SAM CLI",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^10.12.26",
+    "axios": "^0.18.0"
+  },
+  "scripts": {
+    "prebuild": "mkdirp ../dist || true",
+    "build-watch": "npm run prebuild && npm run copy-dependencies && tsc -w --preserveWatchOutput true",
+    "build": "npm run prebuild && npm run copy-dependencies && tsc",
+    "copy-dependencies": "cpx ./node_modules/**/* ../dist/node_modules",
+    "test": "mocha --require ts-node/register hello-world/**/*.spec.ts",
+    "start-api": "concurrently --kill-others --kill-others-on-fail \"npm run build-watch\" \"sam local start-api --template ../template.yaml\""
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.6",
+    "chai": "^4.1.2",
+    "concurrently": "^4.1.0",
+    "cpx": "^1.5.0",
+    "mkdirp": "^0.5.1",
+    "mocha": "^5.1.1",
+    "ts-node": "^8.0.2",
+    "typescript": "^3.3.3"
+  }
+}
