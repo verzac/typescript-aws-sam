@@ -1,3 +1,6 @@
+Note:
+_Regarding dependency vulnerabilities (specifically lodash etc.): I know that this exists. However, I won't update the dependencies because **this is not used, nor should it be used, in production. If you want to use it in your project, remember to update the dependencies yourself.** Remember, it's just a demo project!_
+
 # TypeScript with AWS Serverless Application Model
 This is a sample project based on AWS SAM's hello-world template project, which demonstrates how you can use TypeScript with SAM/Lambda (which is not currently supported by SAM/Lambda itself).
 
