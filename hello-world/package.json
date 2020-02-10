@@ -7,7 +7,7 @@
   "author": "SAM CLI",
   "license": "MIT",
   "dependencies": {
-    "@types/node": "^10.12.26",
+    "@types/node": "^10.17.14",
     "axios": "^0.18.0"
   },
   "scripts": {
@@ -15,18 +15,18 @@
     "build-watch": "npm run prebuild && npm run copy-dependencies && tsc -w --preserveWatchOutput true",
     "build": "npm run prebuild && npm run copy-dependencies && tsc",
     "copy-dependencies": "cpx \"./node_modules/**/*\" ../dist/node_modules",
-    "test": "mocha --require ts-node/register hello-world/**/*.spec.ts",
+    "test": "mocha --require ts-node/register ./**/*.spec.ts",
     "start-api": "concurrently --kill-others --kill-others-on-fail \"npm run build-watch\" \"sam local start-api --template ../template.yaml\""
   },
   "devDependencies": {
-    "@types/chai": "^4.1.7",
-    "@types/mocha": "^5.2.6",
+    "@types/chai": "^4.2.8",
+    "@types/mocha": "^5.2.7",
     "chai": "^4.1.2",
-    "concurrently": "^4.1.0",
+    "concurrently": "^4.1.2",
     "cpx": "^1.5.0",
     "mkdirp": "^0.5.1",
     "mocha": "^5.1.1",
-    "ts-node": "^8.0.2",
-    "typescript": "^3.3.3"
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5"
   }
 }
