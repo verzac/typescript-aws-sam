@@ -48,5 +48,9 @@ Since AWS Lambda does not natively support TypeScript (which is understandable b
 * template.yaml points to /dist instead of /hello-world
 * More dependencies to help automate the build process (tsc, ts-node, concurrently, cpx, mkdirp; all of which are listed under devDependencies)
 
+# Next steps
+- Reorganise the code here. This repository is based on AWS SAM's official hello-world template, which, in my opinion, is shoddily organised. AWS SAM supports running multiple languages and packages on one stack, but working with multiple languages on one monolithic stack is a recipe for disaster and headaches, as you can't leverage language-specific features in your project (e.g. npm scripts in this case). If you require multiple languages on one stack, consider breaking your stack into multiple stacks, with each stack being a microservice.
+- Use webpack! Webpack allows you to _ahem_ add extra build steps without making your package.json scripts messy. Webpack also has a bunch of plugins which you can easily integrate to make your TS/Lambda development way nicer.
+
 # Questions or Issues?
 Chuck them in as an issue! I'll try to help, but keep in mind that this is just a hobby project of mine.
