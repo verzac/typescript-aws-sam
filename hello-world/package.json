@@ -7,7 +7,7 @@
   "author": "SAM CLI",
   "license": "MIT",
   "dependencies": {
-    "@types/node": "^10.17.14",
+    "@types/node": "^10.17.28",
     "axios": "^0.18.0"
   },
   "scripts": {
@@ -19,14 +19,14 @@
     "start-api": "concurrently --kill-others --kill-others-on-fail \"npm run build-watch\" \"sam local start-api --template ../template.yaml\""
   },
   "devDependencies": {
-    "@types/chai": "^4.2.8",
+    "@types/chai": "^4.2.12",
     "@types/mocha": "^5.2.7",
     "chai": "^4.1.2",
     "concurrently": "^4.1.2",
     "cpx": "^1.5.0",
-    "mkdirp": "^0.5.1",
+    "mkdirp": "^0.5.5",
     "mocha": "^5.1.1",
-    "ts-node": "^8.6.2",
-    "typescript": "^3.7.5"
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
   }
 }

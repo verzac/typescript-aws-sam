@@ -6,7 +6,7 @@ This is a sample project based on AWS SAM's hello-world template project, which 
 
 # Prerequisites
 1. [AWS SAM CLI](https://aws.amazon.com/serverless/sam/)
-2. [Node.js 8/10 or NPM](https://nodejs.org/en/)
+2. [Node.js 12 or NPM](https://nodejs.org/en/)
 
 # Usage
 Two ways to do this:
